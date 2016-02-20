@@ -42,7 +42,8 @@
 		"dbl",
 		"float",
 		"floating-point",
-		"number"
+		"number",
+    "ieee754"
 	],
   "bugs": {
     "url": "https://github.com/math-io/float64-ldexp/issues"

@@ -1,8 +1,8 @@
-math-float64-ldexp
+ldexp
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][build-image]][build-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Multiples a double-precision floating-point number by an integer power of two.
+> Multiples a [double-precision floating-point number][ieee754] by an integer power of two.
 
 
 ## Installation
@@ -15,65 +15,29 @@ $ npm install math-float64-ldexp
 ## Usage
 
 ``` javascript
-var foo = require( 'math-float64-ldexp' );
+var ldexp = require( 'math-float64-ldexp' );
 ```
 
-#### foo()
+#### ldexp( frac, exp )
 
-What does `foo` do?
+Multiples a [double-precision floating-point number][ieee754] by an `integer` power of two.
 
 ``` javascript
-foo()
-// returns `undefined`
+var v = ldexp();
+// returns 
 ```
-
-
-## Notes
-
-*	First note.
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'math-float64-ldexp' );
+var ldexp = require( 'math-float64-ldexp' );
 ```
 
 To run the example code from the top-level application directory,
 
 ``` bash
 $ node ./examples/index.js
-```
-
-
----
-## CLI
-
-### Installation
-
-To use the module as a general utility, install the module globally
-
-``` bash
-$ npm install -g math-float64-ldexp
-```
-
-
-### Usage
-
-``` bash
-
-```
-
-
-### Notes
-
-* 	First note
-
-
-### Examples
-
-``` bash
-$
 ```
 
 
