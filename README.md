@@ -25,6 +25,9 @@ Multiples a [double-precision floating-point number][ieee754] by an `integer` po
 ``` javascript
 var x = ldexp( 0.5, 3 ); // => 0.5 * 2**3 = 0.5 * 8
 // returns 4
+
+x = ldexp( 4, -2 ); // => 4 * 2**(-2) = 4 * (1/4)
+// returns 1
 ```
 
 If `frac` equals positive or negative `zero`, `NaN`, or positive or negative `infinity`, the `function` returns a value equal to `frac`.
