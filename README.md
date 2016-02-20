@@ -28,6 +28,11 @@ var v = ldexp();
 ```
 
 
+## Notes
+
+*	This `function` is the inverse of [`frexp`][math-float64-frexp].
+
+
 ## Examples
 
 ``` javascript
@@ -119,3 +124,7 @@ Copyright &copy; 2016. The [Compute.io][compute-io] Authors.
 [tape]: https://github.com/substack/tape
 [istanbul]: https://github.com/gotwarlost/istanbul
 [testling]: https://ci.testling.com
+
+[compute-io]: https://github.com/compute-io/
+[ieee754]: https://en.wikipedia.org/wiki/IEEE_754-1985
+[math-float64-exp]: https://github.com/math-io/float64-frexp
