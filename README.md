@@ -23,8 +23,8 @@ var ldexp = require( 'math-float64-ldexp' );
 Multiples a [double-precision floating-point number][ieee754] by an `integer` power of two.
 
 ``` javascript
-var v = ldexp();
-// returns 
+var v = ldexp( 0.5, 3 ); // => 0.5 * 2**3 = 0.5 * 8
+// returns 4
 ```
 
 
