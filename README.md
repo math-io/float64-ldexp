@@ -127,4 +127,4 @@ Copyright &copy; 2016. The [Compute.io][compute-io] Authors.
 
 [compute-io]: https://github.com/compute-io/
 [ieee754]: https://en.wikipedia.org/wiki/IEEE_754-1985
-[math-float64-exp]: https://github.com/math-io/float64-frexp
+[math-float64-frexp]: https://github.com/math-io/float64-frexp
