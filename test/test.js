@@ -122,3 +122,33 @@ tape( 'if provided a fraction equal to `NaN`, the function returns `NaN`', funct
 	t.ok( v !== v, 'returns NaN' );
 	t.end();
 });
+
+tape( 'the function returns `0` if the result of multiplying a positive fraction and an integer power of two underflows', function test( t ) {
+	// Min subnormal ~5e-324 ~ 2**-1074
+	var v = ldexp( 0.005, -1073 );
+	t.equal( v, 0, 'returns 0' );
+	t.equal( 1/v, PINF, 'returns +0' );
+	t.end();
+});
+
+tape( 'the function returns `-0` if the result of multiplying a negative fraction and an integer power of two underflows', function test( t ) {
+	// Min subnormal ~5e-324 ~ 2**-1074
+	var v = ldexp( -0.005, -1073 );
+	t.equal( v, -0, 'returns 0' );
+	t.equal( 1/v, NINF, 'returns -0' );
+	t.end();
+});
+
+tape( 'the function returns `+infinity` if the result of multiplying a positive fraction and an integer power of two overflows', function test( t ) {
+	// Max double ~1e308 ~ 2**1023
+	var v = ldexp( 1e3, 1021 );
+	t.equal( v, PINF, 'returns +infinity' );
+	t.end();
+});
+
+tape( 'the function returns `-infinity` if the result of multiplying a negative fraction and an integer power of two overflows', function test( t ) {
+	// Max double ~1e308 ~ 2**1023
+	var v = ldexp( -1e3, 1021 );
+	t.equal( v, NINF, 'returns -infinity' );
+	t.end();
+});
