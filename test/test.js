@@ -23,7 +23,7 @@ tape( 'main export is a function', function test( t ) {
 	t.end();
 });
 
-tape( 'the function multiplies a number by an integer power of two (small `x`)', function test( t ) {
+tape( 'the function multiplies a number by an integer power of two (small values)', function test( t ) {
 	var expected;
 	var frac;
 	var exp;
@@ -40,7 +40,7 @@ tape( 'the function multiplies a number by an integer power of two (small `x`)',
 	t.end();
 });
 
-tape( 'the function multiplies a number by an integer power of two (medium `x`)', function test( t ) {
+tape( 'the function multiplies a number by an integer power of two (medium values)', function test( t ) {
 	var expected;
 	var frac;
 	var exp;
@@ -57,7 +57,7 @@ tape( 'the function multiplies a number by an integer power of two (medium `x`)'
 	t.end();
 });
 
-tape( 'the function multiplies a number by an integer power of two (large `x`)', function test( t ) {
+tape( 'the function multiplies a number by an integer power of two (large values)', function test( t ) {
 	var expected;
 	var frac;
 	var exp;
@@ -74,7 +74,7 @@ tape( 'the function multiplies a number by an integer power of two (large `x`)',
 	t.end();
 });
 
-tape( 'the function multiplies a number by an integer power of two (subnormal `x`)', function test( t ) {
+tape( 'the function multiplies a number by an integer power of two (subnormals)', function test( t ) {
 	var expected;
 	var frac;
 	var exp;

@@ -20,11 +20,30 @@ var ldexp = require( 'math-float64-ldexp' );
 
 #### ldexp( frac, exp )
 
-Multiples a [double-precision floating-point number][ieee754] by an `integer` power of two.
+Multiples a [double-precision floating-point number][ieee754] by an `integer` power of two; i.e., `x = frac * 2**exp`.
 
 ``` javascript
-var v = ldexp( 0.5, 3 ); // => 0.5 * 2**3 = 0.5 * 8
+var x = ldexp( 0.5, 3 ); // => 0.5 * 2**3 = 0.5 * 8
 // returns 4
+```
+
+If `frac` equals positive or negative `zero`, `NaN`, or positive or negative `infinity`, the `function` returns a value equal to `frac`.
+
+``` javascript
+var x = ldexp( 0, 20 );
+// returns 0
+
+x = ldexp( -0, 39 );
+// returns -0
+
+x = ldexp( NaN, -101 );
+// returns NaN
+
+x = ldexp( Number.POSITIVE_INFINITY, 11 );
+// returns +infinity
+
+x = ldexp( Number.NEGATIVE_INFINITY, -118 );
+// returns -infinity
 ```
 
 
