@@ -2,7 +2,7 @@ ldexp
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][build-image]][build-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Multiples a [double-precision floating-point number][ieee754] by an integer power of two.
+> Multiplies a [double-precision floating-point number][ieee754] by an integer power of two.
 
 
 ## Installation
@@ -20,7 +20,7 @@ var ldexp = require( 'math-float64-ldexp' );
 
 #### ldexp( frac, exp )
 
-Multiples a [double-precision floating-point number][ieee754] by an `integer` power of two; i.e., `x = frac * 2**exp`.
+Multiplies a [double-precision floating-point number][ieee754] by an `integer` power of two; i.e., `x = frac * 2**exp`.
 
 ``` javascript
 var x = ldexp( 0.5, 3 ); // => 0.5 * 2**3 = 0.5 * 8

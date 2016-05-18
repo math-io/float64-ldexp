@@ -1,7 +1,7 @@
 {
   "name": "math-float64-ldexp",
   "version": "1.0.0",
-  "description": "Multiples a double-precision floating-point number by an integer power of two.",
+  "description": "Multiplies a double-precision floating-point number by an integer power of two.",
   "author": {
     "name": "Athan Reines",
     "email": "kgryte@gmail.com"
